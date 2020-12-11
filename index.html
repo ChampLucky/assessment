@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+   <link rel="stylesheet" href="css/index.css">
+   <script src="js/index.js"></script>
+   </head>
+   <body style="background-color: grey">
+     <div style="text-align:center" >
+      <button  style="color:red;align:center" class="open-button" onclick="openForm()"><b>New Employee</b></button>
+    </div>
+      <div class="form-popup form-style" id="myForm">
+         <form action="#" class="form-container" autocomplete="off" name="form">
+            <table style="color:blue" >
+               <tr>
+                     <h2 style="color:green;text-align:center">Enter Employee Information</h2>
+                  <td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>
+
+                    <button type="button" class="clear"  onclick="closeForm()">
+                    <img src="image/close.png" width="30" height="30">
+
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label><b>Name</b></label>
+                     <br><input type="text" placeholder="Enter Name" id="name" required>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                     <label><b>Employee ID</b></label>
+                     <br><input type="text" placeholder="Enter Employee ID" id="ID" required>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label><b>Department</b></label>
+                     <br>
+                     <select id="dep"  required>
+                        <option value="-1">select</option>
+
+                        <option value="Account and Finance">Account and Finance</option>
+                        <option value="Human Resource Management">Human Resource Management</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Production">Production</option>
+                        <option value="Purchasing">Purchasing</option>
+
+
+
+                     </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                     <label><b>Email Id</b></label>
+                     <br>
+                     <input type="Email" placeholder="Enter Email ID" id="E_ID" required>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label><b>Date of Joining(DOJ)</b></label>
+                     <br><input type="Date"  id="doj" required>
+                  </td>
+               </tr>
+            </table>
+            <input type="reset" class="btn reset" value="Reset">
+            <input type="button"  class="btn"  id="add" value="Submit" onclick="addRow()"/>
+         </form>
+      </div>
+      <br><br><br><br>
+      <div>
+         <table  id="myTableData" class="check1">
+            <thead>
+               <tr class="red">
+                  <th>&nbsp;</th>
+                  <th>Name </th>
+                  <th>Employee ID</th>
+                  <th>Department</th>
+                  <th>Email Id</th>
+                  <th>Date of Joining(DOJ)</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>

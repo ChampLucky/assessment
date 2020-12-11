@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+ background: 	#80aaff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.open-button {
+  margin-top: 25px;
+  background-color: #0099cc;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  top: 23px;
+  align-items: center;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 200px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+	width:700px;
+  background-color: blue;
+  background: #f1f1f1;
+}
+
+.clear
+{ border: none;
+  cursor: pointer;
+}
+.form-container .btn {
+  background-color: #4CBF60;
+  color: red;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: white;
+}
+.form-container .reset {
+  background-color: black;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style select
+{
+
+	width: 160%;
+	background: #ddccff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #635;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.check1{
+	position:absolute;
+	width:100%;
+}
+th, td {
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  text-align:center;
+}
+tr.red th {
+  background:white;
+  color: blue;
+}
+th {
+  background: black;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 0px 2px -1px rgba(0, 0, 0, 0.4);
+}
